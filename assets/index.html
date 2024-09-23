@@ -5,7 +5,7 @@
 
     <!--Page Title-->
     <title>Namari - Free Landing Page Template</title>
-
+  
     <!--Meta Keywords and Description-->
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -28,6 +28,9 @@
 
     <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/Main.js" defer></script>
 </head>
 <body>
 
@@ -149,9 +152,23 @@
                         personal and commercial projects, enjoy!</h2>
                 </div>
 
-                <!--Call to Action-->
-                <a href="#" class="button">START CREATING TODAY</a>
-                <!--End Call to Action-->
+                <section class="section">
+                    <h1 class="section__title">Let's get started</h1>
+                    <button class="section__button">Open</button>
+                </section>
+
+                <div class="modal">
+                    <div class="modal__main">
+                        <h2 class="modal__title">Window for those, who are starting</h2>
+                        <div class="modal__container">
+                            <p>To start working on your purpose you shold go down and buy one of packages.</p>
+                        </div>
+
+                        <button class="modal__close">X</button>
+                    </div>
+                </div>
+
+            
 
             </div>
 
@@ -454,7 +471,7 @@
                             <li>Forum Support</li>
                             <li>1 year free updates</li>
                         </ul>
-                        <a href="#" class="button">BUY TODAY</a>
+                        <button class="buy__button">BUY TODAY</button>
                     </div>
                 </div>
                 <!--End Pricing Block-->
@@ -475,7 +492,7 @@
                             <li>Forum Support</li>
                             <li>2 years free updates</li>
                         </ul>
-                        <a href="#" class="button">BUY TODAY</a>
+                        <button class="buy__button">BUY TODAY</button>
                     </div>
                 </div>
                 <!--End Pricing Block-->
@@ -496,11 +513,33 @@
                             <li>Chat Support</li>
                             <li>Lifetime free updates</li>
                         </ul>
-                        <a href="#" class="button">BUY TODAY</a>
+                        <button class="buy__button">BUY TODAY</button>
                     </div>
                 </div>
                 <!--End Pricing Block-->
 
+            </div>
+
+            <div class="modal2">
+                <div class="modal__main2">
+                    <h2 class="modal__title2">checkout window</h2>
+                    <div class="modal__container2">
+                        <h3>Please, enter your data:</h3>
+                        <p>Your name</p>
+                        <input type="text">
+                        <p>Your phone number</p>
+                        <input type="text">
+                        <p>Your email</p>
+                        <input type="text">
+                        <p></p>
+
+                        <button class="end order">Submit order</button>
+                        <div class="hidden message">
+                            <p>Your order is submitted</p>
+                        </div>
+                    </div>
+                    <button class="modal__close">X</button>
+                </div>
             </div>
         </section>
         <!--End of Pricing Tables-->
