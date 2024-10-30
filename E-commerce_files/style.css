@@ -1,0 +1,910 @@
+/*!
+Theme Name: tovarka
+Theme URI: http://crumina.net/
+Author: Crumina WP Devs
+Author URI: http://crumina.net/
+Description: Description
+Version: 3.3.5
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: tovarka
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+:root{
+	--cr-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+	--tov-main-color: #149cc7;
+	--tov-secondary_color: #ffd800;
+}
+
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html, body {
+	scroll-behavior: smooth;
+	overscroll-behavior: none;
+}
+
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+video,
+object{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+*::-webkit-input-placeholder {color: inherit; opacity: 1;}
+*:-moz-placeholder {color: inherit; opacity: 1;}
+*::-moz-placeholder {color: inherit; opacity: 1;}
+*:-ms-input-placeholder {color: inherit; opacity: 1;}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: #404040;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", courier, monospace;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+body{
+	font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+	background: linear-gradient(90deg, white 21px, transparent 1%) center, linear-gradient(white 21px, transparent 1%) center, black;
+	background-size: 22px 22px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	color: rgb(33,36,38);
+}
+h1,h2,h3,h4{
+	text-transform: uppercase;
+}
+h1{
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.1;
+}
+h2{
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.15;
+}
+h3{
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+h4{
+	font-size: 18px;
+}
+h5{
+	font-size: 18px;
+	font-weight: 300;
+}
+
+
+.site-header {
+	background: #1c385f;
+	color: #fff;
+	box-shadow: var(--cr-shadow);
+	width: 100%;
+}
+.site-header a {
+	color: #fff;
+}
+
+.site-header .container{
+	width: 990px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.site-branding {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin: 10px auto 10px;
+}
+.site-branding a {
+	text-decoration: none;
+}
+.site-branding h1 {
+	margin-bottom: 0;
+}
+.main-navigation {
+	margin: auto;
+}
+.main-navigation .contact{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.main-navigation .contact a {
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	align-items: center;
+	align-content: center;
+}
+ .contact img {
+	width: 32px;
+	 margin-right: 15px;
+}
+.main-navigation .description {
+	font-weight: 500;
+	font-size: 14px;
+}
+.main-navigation .number{
+	font-weight: 700;
+}
+.title{
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+.title:before,
+.title:after{
+	content: "";
+	height: 3px;
+	border-radius: 5px;
+	display: inline-block;
+	background: #007aff;
+	position: absolute;
+	bottom: 0;
+	left:0;
+}
+.title:before {
+	width: 20px;
+}
+.title:after{
+	left:30px;
+	width: 80px;
+}
+
+
+/* General button style (reset) */
+
+.btn {
+	display: flex;
+	flex: 1 0 100%;
+	align-items: center;
+	justify-content: center;
+	background: #00a046;
+	border-radius: 5px;
+	min-height: 50px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0,0,0,.4);
+	text-decoration: none;
+	box-shadow: var(--cr-shadow);
+	border: none;
+	text-transform: uppercase;
+	width: 90%;
+	margin: 15px auto;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn.btn-disabled{
+	background: #ffb73b;
+	cursor: inherit;
+	color: #222;
+	text-shadow: 0 1px 0 rgba(255,255,255,.6);
+}
+.content-wrap{
+	background: #fff;
+	border-radius: 5px;
+	width: 480px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: var(--cr-shadow);
+	position: relative;
+}
+
+
+.margin20{
+	margin: 20px;
+}
+.margin30{
+	margin: 30px;
+}
+.margin40{
+	margin: 40px;
+}
+
+.single .footer{
+	max-width: 480px;
+	padding-top: 20px;
+}
+
+.footer .images img{
+	border-radius: 5px;
+	box-shadow: var(--cr-shadow);
+	overflow: hidden;
+	margin-bottom: 15px;
+	width: 100%;
+}
+.footer p{
+	font-size: 15px;
+}
+.footer {
+	font-size: 12px;
+	padding: 20px 0 0;
+	text-align: center;
+	background: #fff;
+}
+.footer-menu{
+	list-style: none;
+	padding: 0 40px 20px;
+	margin: 0;
+}
+.footer-menu li {
+	display: inline;
+	padding: 0 5px;
+}
+
+.footer-subscribe-messenger{
+	border-top: 1px dashed #ccc;
+	background: #fcfcfc;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: sticky;
+	bottom: 0;
+	width: 100%;
+	max-width: 100%;
+	z-index: 9999;
+}
+
+.footer-subscribe-messenger.on-thanks {
+	border-bottom: 1px dashed #ccc;
+	background: #dbeaec;
+	padding: 20px;
+}
+.footer-subscribe-messenger.on-thanks p{
+	padding-bottom: 15px;
+	font-size: 18px;
+	font-weight: 500;
+}
+.footer-subscribe-messenger.on-thanks .text{
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.footer-subscribe-messenger.on-thanks .icon{
+	width: 48px;
+	height: 48px;
+	margin-right: 10px;
+}
+.single .footer-subscribe-messenger{
+	width: 480px;
+}
+.footer-subscribe-messenger a {
+	text-decoration: none;
+}
+.footer-subscribe-messenger p{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 5px;
+	margin: 0;
+}
+
+.footer-subscribe-messenger .subscribe-button{
+	all:unset;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+}
+.footer-subscribe-messenger .icon{
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+}
+.footer-subscribe-messenger .text{
+	padding: 7px 20px;
+	border-radius: 5px;
+	background: #0d47a1;
+	color: #fff;
+	font-size: 12px;
+}
+.viber-bg{
+	background-color: #7360F2 !important;
+}
+.telegram-bg{
+	background-color: #2AABEE !important;
+}
+
+	/* Media
+    --------------------------------------------- */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/* Captions
+--------------------------------------------- */
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/* Galleries
+--------------------------------------------- */
+.gallery {
+	margin-bottom: 1.5em;
+	display: grid;
+	grid-gap: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.gallery-columns-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-columns-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-columns-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-columns-5 {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.gallery-columns-6 {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.gallery-columns-7 {
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.gallery-columns-8 {
+	grid-template-columns: repeat(8, 1fr);
+}
+
+.gallery-columns-9 {
+	grid-template-columns: repeat(9, 1fr);
+}
+
+.gallery-caption {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+
+/* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	display: none;
+}
+
+/* Re-display the Theme Footer when Infinite Scroll has reached its end. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+/* Do not show the outline on the skip link target. */
+#primary[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/* Alignments
+--------------------------------------------- */
+.alignleft {
+
+	/*rtl:ignore*/
+	float: left;
+
+	/*rtl:ignore*/
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.alignright {
+
+	/*rtl:ignore*/
+	float: right;
+
+	/*rtl:ignore*/
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.5em;
+}
+
+/* Pages */
+.page #page{
+	background: #fff;
+	box-shadow: var(--cr-shadow);
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-around;
+	margin-right: auto;
+	margin-left: auto;
+	width: 1024px;
+	max-width: 100%;
+	flex-direction: column;
+}
+#page .page-content{
+	padding: 30px;
+}
+
+.page-content .entry-header{
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.goods-catalog{
+	padding: 40px 10px 20px 10px;
+	display: flex;
+	justify-content: space-around;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1024px;
+	flex-wrap: wrap;
+}
+.goods-catalog .card{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 480px;
+	max-width: 480px;
+	margin-bottom: 30px;
+	font-weight: 300;
+	border-radius: 5px;
+	box-shadow: var(--cr-shadow);
+	text-align: center;
+}
+
+.goods-catalog .card img {width:100%}
+
+@media (min-width:600px){
+	.goods-catalog .card{ flex-basis: 320px; max-width: 320px; }
+}
+.card-title {
+	font-size: 14px;
+	font-weight: 600;
+
+	padding: 5px 10px;
+}
+.card-title a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.card-price {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.card-price del {
+	font-weight: 400;
+	margin-right: 10px;
+}
+.card-price span {
+	color: #FF2525;
+}
+
+.wpcf7-form.submitting{
+	position: relative;
+
+}
+.wpcf7-form.submitting:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #1c385f;
+	z-index: 10;
+}
+.wpcf7-form.submitting:after{
+	content: 'Ð—Ð°Ñ‡ÐµÐºÐ°Ð¹Ñ‚Ðµ Ð±ÑƒÐ´ÑŒ-Ð»Ð°ÑÐºÐ°. Ð’Ð°ÑˆÐµ Ð·Ð°Ð¼Ð¾Ð²Ð»ÐµÐ½Ð½Ñ Ð¾Ð±Ñ€Ð¾Ð±Ð»ÑÑ”Ñ‚ÑŒÑÑ';
+	font-size: 30px;
+	font-weight: 700;
+	position: absolute;
+	left:50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 420px;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0,0,0,.6);
+	z-index: 20;
+	text-align: center;
+	line-height: 2;
+}
+
+.grecaptcha-badge { visibility: hidden; }
+
+
+.anchor-buttons {
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+.anchor-buttons .btn-scroll {
+	width: auto;
+	flex: auto;
+	background: #00a6ff;
+	white-space: nowrap;
+	padding: 0 20px;
+	margin:0;
+}
+
+
+
+.section-title{
+	text-align: center;
+	margin: 20px 0;
+}
+
+h5.card-title{
+	min-height: 75px;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.gallery-images {
+	margin-bottom: 10px;
+}
+.gallery-images img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	aspect-ratio: 1;
+}
+
+.gallery-thumbs img{
+	opacity: 0.4;
+	cursor: pointer;
+}
+.gallery-thumbs .swiper-slide-thumb-active img{
+	opacity: 1;
+}
+
+.card-upsell .card-price {
+	font-size: 30px;
+	font-weight: normal;
+	color: #ee1562;
+}
+.card-upsell .card-price strong{
+	font-weight: normal;
+	color: #00a046;
+	font-size: 36px;
+}
+
+.card-gallery{
+	width: 100%;
+	max-width: 300px;
+	margin: 10px auto;
+	position: relative;
+}
+.card-description {
+	text-align: left;
+	padding: 0 20px;
+}
+.card-description p {
+	margin-bottom: 10px;
+}
+.card-description ul {
+	padding-left: 15px;
+	margin: 10px 0 22px;
+	font-size: 14px;
+	list-style: none;
+}
+.card-description li:before{
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	margin-right: 10px;
+	background-image: url("./img/check.svg");
+	background-size: contain;
+	content: '';
+	list-style: none;
+}
+
+.show-description svg{
+	transform: rotate(-90deg);
+	margin-left: 10px;
+	transition: transform 0.3s ease-in;
+}
+.show-description.opened svg{
+	transform: rotate(90deg);
+}
+.card-description .show-description{
+	margin: 0 0 10px 0;
+	width: 100%;
+	background: #b3ced9;
+}
+.collapse {
+	display: none;
+}
+
+.collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	transition:height .35s ease
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	.collapsing {
+		transition:none
+	}
+}

@@ -1,0 +1,2380 @@
+/* styles */
+
+body {
+	min-width: 480px;
+	background: #eee;
+	font-family: 'AvenirNextCyr', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #333;
+	cursor: default;
+}
+
+.main_wrapper {
+	margin: 0 auto;
+	width: 480px;
+	background: #fff;
+}
+
+section {
+	padding: 30px 0;
+}
+
+section.dark_theme {
+	background: #333;
+	color: #fff;
+}
+
+section.color_theme {
+	background: #399761;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+b {
+	font-weight: 700;
+}
+
+.owl-height {
+	-webkit-transition: height 0.3s ease-in-out;
+	-o-transition: height 0.3s ease-in-out;
+	-moz-transition: height 0.3s ease-in-out;
+	transition: height 0.3s ease-in-out;
+}
+
+/* button */
+
+.button {
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+	height: 80px;
+	border: none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #ffd800;
+	font-family: 'AvenirNextCyr', sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 80px;
+	letter-spacing: 2px;
+	color: #333;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+}
+.button:active{
+	top: 2px;
+}
+
+/* titles */
+
+h2.title {
+	margin: 0 0 30px;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+}
+
+p.subtitle{
+	font-weight: 700;
+	color: #aa83f1;
+	text-align: center;
+	padding: 0 40px;
+	margin: -10px 0 30px;
+}
+
+/* header */
+
+.offer_section {
+	padding: 0 0 30px;
+}
+
+.offer_section.offer1 {
+	background: #333;
+}
+
+.offer_section .title_block {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.offer_section.offer3 .title_block {
+	padding: 12px 0;
+	color: #fff;
+	background: #399761;
+}
+
+.offer_section .title_block .main_title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 40px;
+}
+
+.offer_section.offer1 .title_block .main_title {
+	padding: 12px 0;
+	background: #149cc7;
+	color: #fff;
+}
+
+.offer_section.offer2 .title_block .main_title {
+	padding: 12px 0;
+}
+
+.offer_section.offer3 .title_block .main_title {
+	margin: 0 0 5px;
+}
+
+.offer_section .title_block .main_subtitle {
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+
+.offer_section.offer1 .title_block .subtitle {
+	padding: 10px 0;
+	color: #fff;
+}
+
+.offer_section.offer2 .title_block .subtitle {
+	padding: 10px 0;
+	background: #149cc7;
+	color: #fff;
+}
+
+.offer_section .offer_image {
+	display: block;
+}
+
+.offer_section.offer3 .image_block {
+	position: relative;
+}
+
+.offer_section.offer3 .discount_block {
+	padding: 18px 0 0;
+	width: 79px;
+	height: 101px;
+	background: url("_w0r9fyq.png") center no-repeat;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+
+.offer_section.offer3 .discount_block .value {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.offer_section.offer3 .discount_block .text {
+	line-height: 20px;
+}
+
+.offer_section.offer1 .price_block {
+	background: #fff;
+	text-align: center;
+}
+
+.offer_section.offer1 .price_item {
+	float: left;
+	padding: 16px 0 0;
+	width: 170px;
+	height: 80px;
+}
+
+.offer_section.offer1 .price_item.new {
+	background: #149cc7;
+	color: #fff;
+}
+
+.offer_section.offer1 .price_item .text {
+	margin: 0 0 5px;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.offer_section.offer1 .price_item .value {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 28px;
+}
+
+.offer_section.offer1 .price_item.old .value {
+	text-decoration: line-through;
+}
+
+.offer_section.offer1 .discount_block {
+	float: left;
+	padding: 12px 0 0;
+	width: 140px;
+	height: 80px;
+	background: #ffd800;
+	position: relative;
+}
+
+.offer_section.offer1 .discount_block:before, 
+.offer_section.offer1 .discount_block:after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+}
+
+.offer_section.offer1 .discount_block:before {
+	border-top: 40px solid #ffd800;
+	border-bottom: 40px solid #ffd800;
+	border-left: 20px solid #fff;
+	left: -10px;
+}
+
+.offer_section.offer1 .discount_block:after {
+	border-top: 40px solid #149cc7;
+	border-bottom: 40px solid #149cc7;
+	border-left: 20px solid #ffd800;
+	right: -10px;
+}
+
+.offer_section.offer1 .discount_block .text {
+	margin: 0 0 5px;
+	line-height: 16px;
+	letter-spacing: 2px;
+}
+
+.offer_section.offer1 .discount_block .value {
+	font-weight: 700;
+	font-size: 34px;
+	line-height: 34px;
+}
+
+.offer_section.offer2 .price_block {
+	margin: -16px 0 25px;
+	height: 126px;
+	background: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html") center no-repeat;
+	text-align: center;
+	position: relative;
+}
+
+.offer_section.offer2 .price_item {
+	float: left;
+	padding: 40px 0 0;
+	width: 170px;
+}
+
+.offer_section.offer2 .price_item .text {
+	margin: 0 0 5px;
+	font-size: 14px;
+	line-height: 14px;
+	text-transform: uppercase;
+}
+
+.offer_section.offer2 .price_item .value {
+	font-size: 34px;
+	line-height: 34px;
+}
+
+.offer_section.offer2 .price_item.old .value {
+	text-decoration: line-through;
+}
+
+.offer_section.offer2 .price_item.new .value {
+	font-weight: 700;
+}
+
+.offer_section.offer2 .discount_block {
+	float: left;
+	padding: 33px 0 0;
+	width: 140px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.offer_section.offer2 .discount_block .text {
+	margin: 0 0 5px;
+	font-size: 24px;
+	line-height: 24px;
+	letter-spacing: 2px;
+}
+
+.offer_section.offer2 .discount_block .value {
+	font-size: 40px;
+	line-height: 40px;
+}
+
+.offer_section.offer3 .price_block {
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.offer_section.offer3 .price_item {
+	float: left;
+	padding: 20px 0 0;
+	width: 50%;
+	height: 90px;
+	border-right: 1px solid #e6e6e6;
+	text-align: center;
+}
+
+.offer_section.offer3 .price_item:last-child {
+	border: none;
+}
+
+.offer_section.offer3 .price_item .text {
+	margin: 0 0 5px;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.offer_section.offer3 .price_item.new .text {
+	margin: 0 0 8px;
+}
+
+.offer_section.offer3 .price_item.new .text span {
+	padding: 2px 5px 3px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #ee3737;
+	color: #fff;
+}
+
+.offer_section.offer3 .price_item.old .value {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 30px;
+	text-decoration: line-through;
+}
+
+.offer_section.offer3 .price_item.new .value {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.offer_section ul {
+	margin: 25px 0;
+}
+
+.offer_section.offer1 ul:after {
+	display: block;
+	content: '';
+	margin: 25px 0 0;
+	height: 8px;
+	background: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html") center no-repeat;
+}
+
+.offer_section ul li {
+	float: left;
+	width: 33.3%;
+	padding: 0 10px;
+	text-align: center;
+	line-height: 1.3em;
+}
+.offer_section ul li>img{
+	display: block;
+	margin: 0 auto 10px;
+}
+.offer_section.offer1 ul li {
+	color: #fff;
+}
+
+.offer_section.offer1 .timer_block {
+	margin: 25px auto;
+	width: 400px;
+	color: #fff;
+	text-align: center;
+}
+
+.offer_section.offer1 .timer_block p {
+	margin: 0 0 15px;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.offer_section.offer1 .timer_item {
+	float: left;
+	margin: 0 32px 0 0;
+	width: 112px;
+	position: relative;
+}
+
+.offer_section.offer1 .timer_item:last-child {
+	margin: 0;
+}
+
+.offer_section.offer1 .timer_item:before {
+	display: block;
+	content: ':';
+	width: 32px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 52px;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: -32px;
+}
+
+.offer_section.offer1 .timer_item:last-child:before {
+	display: none;
+}
+
+.offer_section.offer1 .timer_item .count {
+	margin: 0 0 10px;
+	height: 60px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 60px;
+}
+
+.offer_section.offer1 .timer_item .count span {
+	display: block;
+	float: left;
+	margin: 0 4px 0 0;
+	width: 54px;
+	height: 60px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.3)), color-stop(50%, rgba(0,0,0,0.3)), color-stop(50%, #4a4a4a), color-stop(51%, #4a4a4a), color-stop(51%, rgba(0,0,0,0.3)), to(rgba(0,0,0,0.3)));
+	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 50%, #4a4a4a 50%, #4a4a4a 51%, rgba(0,0,0,0.3) 51%, rgba(0,0,0,0.3) 100%);
+	background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 50%, #4a4a4a 50%, #4a4a4a 51%, rgba(0,0,0,0.3) 51%, rgba(0,0,0,0.3) 100%);
+	background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 50%, #4a4a4a 50%, #4a4a4a 51%, rgba(0,0,0,0.3) 51%, rgba(0,0,0,0.3) 100%);
+	background-image: linear-gradient(to top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 50%, #4a4a4a 50%, #4a4a4a 51%, rgba(0,0,0,0.3) 51%, rgba(0,0,0,0.3) 100%);
+	-webkit-box-shadow: inset 0 -2px 0 #4a4a4a;
+	-moz-box-shadow: inset 0 -2px 0 #4a4a4a;
+	box-shadow: inset 0 -2px 0 #4a4a4a;
+}
+
+.offer_section.offer1 .timer_item .count span:last-child {
+	margin: 0;
+}
+
+.offer_section.offer1 .timer_item .text {
+	line-height: 16px;
+}
+
+.offer_section.offer2 .timer_block {
+	margin: 0 auto 25px;
+	width: 400px;
+	text-align: center;
+}
+
+.offer_section.offer2 .timer_block p {
+	margin: 0 0 15px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.offer_section.offer2 .timer_item {
+	float: left;
+	margin: 0 32px 0 0;
+	width: 112px;
+	position: relative;
+}
+
+.offer_section.offer2 .timer_item:last-child {
+	margin: 0;
+}
+
+.offer_section.offer2 .timer_item:before {
+	display: block;
+	content: ':';
+	width: 32px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 52px;
+	color: #149cc7;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: -32px;
+}
+
+.offer_section.offer2 .timer_item:last-child:before {
+	display: none;
+}
+
+.offer_section.offer2 .timer_item .count {
+	margin: 0 0 6px;
+	height: 60px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 60px;
+	color: #149cc7;
+}
+
+.offer_section.offer2 .timer_item .count span {
+	display: block;
+	float: left;
+	margin: 0 4px 0 0;
+	width: 54px;
+	height: 60px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #f5f5f5;
+}
+
+.offer_section.offer2 .timer_item .count span:last-child {
+	margin: 0;
+}
+
+.offer_section.offer2 .timer_item .text {
+	line-height: 16px;
+}
+
+.offer_section.offer3 .timer_block {
+	padding: 8px 10px 7px 20px;
+}
+
+.offer_section.offer3 .timer_block p {
+	float: left;
+	margin: 6px 0 0;
+	padding: 0 0 0 40px;
+	width: 170px;
+	background: url("i9q71adg.png") left center no-repeat;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.offer_section.offer3 .timer {
+	float: right;
+	width: 240px;
+}
+
+.offer_section.offer3 .timer_item {
+	float: left;
+	width: 60px;
+	text-align: center;
+}
+
+.offer_section.offer3 .timer_item .text {
+	margin: 0 0 4px;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.offer_section.offer3 .timer_item .count {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 30px;
+	position: relative;
+}
+
+.offer_section.offer3 .timer_item .count:before {
+	display: block;
+	content: ':';
+	width: 10px;
+	line-height: 24px;
+	position: absolute;
+	top: 0;
+	right: -5px;
+}
+
+.offer_section.offer3 .timer_item:last-child .count:before {
+	display: none;
+}
+
+.offer_section.offer3 .benefits_list {
+	padding: 12px 0 12px 18px;
+	color: #fff;
+	background: #399761;
+	
+}
+
+.offer_section.offer3 .benefits_list .benefit_item {
+	float: left;
+	padding: 0 0 0 44px;
+	width: 160px;
+	font-size: 14px;
+	line-height: 16px;
+	position: relative;
+}
+
+.offer_section.offer3 .benefits_list .benefit_item:last-child {
+	width: 130px;
+}
+
+.offer_section.offer3 .benefits_list .benefit_item:before {
+	display: block;
+	content: '';
+	width: 34px;
+	height: 34px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.1) center no-repeat;
+	position: absolute;
+	top: -2px;
+	left: 0;
+}
+
+.offer_section.offer3 .benefits_list .benefit_item:nth-child(1):before {
+	background-image: url("oqvqzyq3.png");
+}
+
+.offer_section.offer3 .benefits_list .benefit_item:nth-child(2):before {
+	background-image: url("r-nne-a1.png");
+}
+
+.offer_section.offer3 .benefits_list .benefit_item:nth-child(3):before {
+	background-image: url("v5rkjm90.png");
+}
+
+.products_count {
+	margin: 20px 0 0;
+	text-align: center;
+}
+
+.offer_section.offer1 .products_count {
+	color: #fff;
+}
+
+.products_count b {
+	margin: 0 3px;
+	padding: 3px 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #aa83f1;
+	color: #fff;
+}
+
+.offer_section .field {
+	display: block;
+	margin: 0 auto 20px;
+	padding: 0 20px 0 80px;
+	width: 400px;
+	height: 66px;
+	border: 1px solid #e6e6e6;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #f5f5f5;
+	font-family: 'AvenirNextCyr', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #333;
+}
+
+.offer_section.offer1 .field {
+	border: none;
+	background-color: #fff;
+}
+
+.offer_section .field[name="name"] {
+	margin-top: 25px;
+	background-image: url("yxj3xcwb.png");
+	background-position: 23px center;
+	background-repeat: no-repeat;
+}
+
+.offer_section .field[name="phone"] {
+	background-image: url("yxj3xcwb.png");
+	background-position: 20px center;
+	background-repeat: no-repeat;
+}
+
+.offer_section .field::-webkit-input-placeholder {
+	opacity: 1;
+	color: #333;
+}
+
+.offer_section .field:-moz-placeholder {
+	opacity: 1;
+	color: #333;
+}
+
+.offer_section .field::-moz-placeholder {
+	opacity: 1;
+	color: #333;
+}
+
+.offer_section .field:-ms-input-placeholder {
+	opacity: 1;
+	color: #333;
+}
+
+.offer_section .field:focus::-webkit-input-placeholder {
+	opacity: 0;
+}
+
+.offer_section .field:focus:-moz-placeholder {
+	opacity: 0;
+}
+
+.offer_section .field:focus::-moz-placeholder {
+	opacity: 0;
+}
+
+.offer_section .field:focus:-ms-input-placeholder {
+	opacity: 0;
+}
+
+/* video */
+
+.video_block {
+	width: 480px;
+	height: 270px;
+	background-color: #000;
+	overflow: hidden;
+	position: relative;
+}
+
+.video_block iframe, 
+.video_block object, 
+.video_block embed {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* slider */
+
+.slider .owl-prev, 
+.slider .owl-next {
+	width: 40px;
+	height: 40px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #ffd800 url("0z5xzbro.png") no-repeat;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+}
+
+.slider .owl-prev {
+	background-position: left center;
+	left: 20px;
+}
+
+.slider .owl-next {
+	background-position: right center;
+	right: 20px;
+}
+
+/* image */
+
+img.image {
+	display: block;
+}
+
+/* description */
+.description_section{
+	padding-bottom: 0;
+}
+
+.description_section img {
+	display: block;
+	margin: 0 auto;
+}
+
+.description_section .image_block img {
+	margin: 0 auto;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.description_section .text_block {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.description_section .text_block p {
+	margin: 0 20px 15px;
+}
+
+.description_section .text_block p:last-child {
+	margin: 0 20px;
+}
+
+/* list 1 */
+
+.list1 {
+	padding: 20px 0;
+	background: #149cc7;
+}
+
+section .list1 {
+	padding: 0;
+}
+
+.list1 li {
+	margin: 0 0 12px;
+	padding: 0 20px 16px 50px;
+	background: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html") 20px 2px no-repeat;
+	color: #fff;
+	position: relative;
+}
+
+.list1 li:last-child {
+	margin: 0;
+	padding: 0 20px 0 50px;
+}
+
+.list1 li:before {
+	display: block;
+	content: '';
+	width: 100%;
+	height: 4px;
+	background: url("76k7wdl9.png") center no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.list1 li:last-child:before {
+	display: none;
+}
+
+/* list 2 */
+
+.list2 {
+	padding: 20px 0;
+	background: #333;
+}
+
+section .list2 {
+	padding: 0;
+}
+
+.list2 li {
+	margin: 0 0 12px;
+	padding: 0 20px 0 50px;
+	background: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html") 20px 2px no-repeat;
+	color: #fff;
+	position: relative;
+}
+
+.list2 li:last-child {
+	margin: 0;
+}
+
+/* list 3 */
+
+.list3 li {
+	padding: 14px 20px 14px 50px;
+	background: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html") 20px 16px no-repeat;
+}
+
+.list3 li:nth-child(odd) {
+	background-color: #f5f5f5;
+}
+
+/* list 4 */
+
+.list4 {
+	padding: 20px 0;
+}
+
+section .list4 {
+	padding: 0;
+}
+
+.list4 li {
+	margin: 0 0 12px;
+	padding: 0 20px 0 50px;
+	background: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html") 20px 2px no-repeat;
+	position: relative;
+}
+
+.list4 li:last-child {
+	margin: 0;
+}
+
+/* characteristics 1 */
+
+.characteristics_list1 {
+	margin: 0 20px;
+}
+
+.characteristics_list1 .characteristic_item {
+	display: table;
+	margin: 0 0 4px;
+	width: 100%;
+	height: 64px;
+	border-left: 3px solid #a37ee8;
+	background: #f5f5f5;
+}
+
+.characteristics_list1 .characteristic_item:last-child {
+	margin: 0;
+}
+
+.characteristics_list1 .characteristic_item .text {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 20px;
+	font-weight: 700;
+}
+
+.description_section .text_block ul li{
+    display: table;
+    width: 92%;
+    height: 64px;
+    border-left: 3px solid #a37ee8;
+    background: #f5f5f5;
+    margin: 5px 17px;
+    text-align: center;
+    padding: 21px 0px;
+}
+
+.characteristics_list1 .characteristic_item .value {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 20px 0 0;
+	text-align: right;
+}
+
+/* characteristics 2 */
+
+.characteristics_list2 {
+	margin: 0 20px;
+	font-size: 0;
+	line-height: 0;
+	letter-spacing: -1px;
+}
+
+.characteristics_list2 .characteristic_item {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 20px 15px 0;
+	padding: 0 0 0 30px;
+	width: 210px;
+	background: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html") left 2px no-repeat;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: normal;
+}
+
+.characteristics_list2 .characteristic_item:nth-child(even) {
+	margin: 0 0 15px;
+}
+
+.characteristics_list2 .characteristic_item:nth-last-child(2) {
+	margin: 0 20px 0 0;
+}
+
+.characteristics_list2 .characteristic_item:last-child {
+	margin: 0;
+}
+
+.characteristics_list2 .characteristic_item .text {
+	font-weight: 700;
+}
+
+/* benefits 1 */
+
+.benefits_list1 {
+	font-size: 0;
+	line-height: 0;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+.benefits_list1 .benefit_item {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 20px 30px 0;
+	width: 210px;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: normal;
+}
+
+.benefits_list1 .benefit_item:nth-child(even) {
+	margin: 0 0 30px;
+}
+
+.benefits_list1 .benefit_item:nth-last-child(2) {
+	margin: 0 20px 0 0;
+}
+
+.benefits_list1 .benefit_item:last-child {
+	margin: 0;
+}
+
+.benefits_list1 img {
+	display: block;
+	margin: 0 auto 15px;
+	width: 150px;
+	border: 3px solid #e6e6e6;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #e6e6e6;
+}
+
+.dark_theme .benefits_list1 img {
+	border: 3px solid #fff;
+	background: #fff;
+}
+
+.benefits_list1.image_rounded img {
+	width: 170px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.benefits_list1 h4 {
+	font-weight: 700;
+}
+
+.dark_theme .benefits_list1 h4 {
+	color: #ffd800;
+}
+
+.benefits_list1 h4 + p {
+	margin: 5px 0 0;
+}
+
+/* benefits 3 */
+
+.benefits_list3 .benefit_item {
+	display: table;
+	margin: 0 20px 30px;
+	width: 440px;
+	min-height: 150px;
+	position: relative;
+}
+
+.benefits_list3 .benefit_item:last-child {
+	margin: 0 20px 10px;
+}
+
+.benefits_list3 .benefit_item img {
+	display: block;
+	width: 150px;
+	border: 3px solid #e6e6e6;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #e6e6e6;
+	position: absolute;
+	top: 50%;
+	margin-top: -75px;
+	left: 0;
+}
+
+.dark_theme .benefits_list3 .benefit_item img {
+	border: 3px solid #fff;
+	background: #fff;
+}
+
+.benefits_list3 .benefit_item:nth-child(even) img {
+	left: auto;
+	right: 0;
+}
+
+.benefits_list3 .benefit_item .text_block {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 170px;
+}
+
+.benefits_list3 .benefit_item:nth-child(even) .text_block {
+	padding: 0 170px 0 0;
+	text-align: right;
+}
+
+.benefits_list3 .benefit_item .text_block h4 {
+	font-weight: 700;
+}
+
+.dark_theme .benefits_list3 .benefit_item .text_block h4 {
+	color: #ffd800;
+}
+
+.benefits_list3 .benefit_item .text_block h4 + p {
+	margin: 5px 0 0;
+}
+
+/* benefits 4 */
+
+.benefits_list4 .benefit_item {
+	margin: 0 20px 30px;
+	padding: 0 0 2px;
+	border: 3px solid #f5f5f5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #f5f5f5;
+	-webkit-box-shadow: 0 2px 0 #d9d9d9;
+	-moz-box-shadow: 0 2px 0 #d9d9d9;
+	box-shadow: 0 2px 0 #d9d9d9;
+	color: #333;
+	text-align: center;
+	overflow: hidden;
+}
+
+.dark_theme .benefits_list4 .benefit_item {
+	border: 3px solid #fff;
+	background: #fff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.benefits_list4 .benefit_item:last-child {
+	margin: 0 20px 10px;
+}
+
+.benefits_list4 .benefit_item img {
+	display: block;
+}
+
+.benefits_list4 .benefit_item h4 {
+	margin: 0 17px;
+	padding: 15px 0;
+	border-bottom: 1px solid #e6e6e6;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.benefits_list4 .benefit_item h4:before {
+	display: block;
+	content: '';
+	width: 46px;
+	height: 46px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #ffd800 url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html") center no-repeat;
+	position: absolute;
+	top: -23px;
+	right: 10px;
+}
+
+.benefits_list4 .benefit_item p {
+	margin: 15px;
+}
+
+/* benefits 5 */
+
+.benefits_list5 .benefit_item {
+	float: left;
+	padding: 30px 20px 0 20px;
+	width: 240px;
+	height: 240px;
+	font-size: 0;
+	line-height: 0;
+	letter-spacing: -1px;
+	color: #fff;
+	text-align: center;
+}
+
+.benefits_list5 .benefit_item:nth-child(4n-3) {
+	background: #399761;
+}
+
+.benefits_list5 .benefit_item:nth-child(4n-2) {
+	background: #7982e5;
+	background: -moz-linear-gradient(left, #7982e5 0%, #a17ce5 100%);
+	background: -webkit-linear-gradient(left, #7982e5 0%,#a17ce5 100%);
+	background: linear-gradient(to right, #7982e5 0%,#a17ce5 100%);
+}
+
+.benefits_list5 .benefit_item:nth-child(4n-1) {
+	background: #5c7bcf;
+	background: -moz-linear-gradient(left, #5c7bcf 0%, #727bd8 100%);
+	background: -webkit-linear-gradient(left, #5c7bcf 0%,#727bd8 100%);
+	background: linear-gradient(to right, #5c7bcf 0%,#727bd8 100%);
+}
+
+.benefits_list5 .benefit_item:nth-child(4n) {
+	background: #666ec1;
+	background: -moz-linear-gradient(left, #666ec1 0%, #8869c1 100%);
+	background: -webkit-linear-gradient(left, #666ec1 0%,#8869c1 100%);
+	background: linear-gradient(to right, #666ec1 0%,#8869c1 100%);
+}
+
+.benefits_list5 .benefit_item .icon_block {
+	margin: 0 auto 20px;
+	width: 60px;
+	height: 60px;
+	display: block;
+	border: 1px solid #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	line-height: 58px;
+	text-align: center;
+}
+
+.benefits_list5 .benefit_item .icon_block img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.benefits_list5 .benefit_item p {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: normal;
+}
+
+/* use steps */
+
+.use_steps_section {
+	padding: 30px 0 0;
+}
+
+.use_steps_section h2.title {
+	padding: 0 20px;
+}
+
+/* use steps 1 */
+
+.use_steps1_list .step_item {
+	display: table;
+	width: 100%;
+	height: 204px;
+	border-top: 4px solid #d9d9d9;
+	background: #f5f5f5;
+	position: relative;
+}
+
+.use_steps1_list .step_item img {
+	display: block;
+	width: 220px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.use_steps1_list .step_item:nth-child(even) img {
+	right: auto;
+	left: 0;
+}
+
+.use_steps1_list .step_item .text_block {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 240px 0 20px;
+	text-align: center;
+}
+
+.use_steps1_list .step_item:nth-child(even) .text_block {
+	padding: 0 20px 0 240px;
+}
+
+.use_steps1_list .step_item .number {
+	margin: 0 auto 10px;
+	width: 40px;
+	height: 40px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #149cc7;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 40px;
+	color: #fff;
+}
+
+/* use steps 2 */
+
+.use_steps2_list {
+	background: #333;
+}
+
+.use_steps2_list .step_item {
+	display: table;
+	padding: 20px;
+	width: 100%;
+	border-bottom: 1px solid #5c5c5c;
+	color: #fff;
+}
+
+.use_steps2_list .step_item:last-child {
+	margin: 0;
+}
+
+.use_steps2_list .step_item .number_block {
+	display: table-cell;
+	vertical-align: middle;
+	width: 40px;
+	position: relative;
+}
+
+.use_steps2_list .step_item .number_block:before {
+	display: block;
+	content: '';
+	border-left: 7px solid #149cc7;
+	border-top: 7px solid rgba(255,255,255,0);
+	border-bottom: 7px solid rgba(255,255,255,0);
+	position: absolute;
+	top: 50%;
+	margin-top: -7px;
+	right: -7px;
+}
+
+.use_steps2_list .step_item .number {
+	width: 40px;
+	height: 40px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #149cc7;
+	-webkit-box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 40px;
+	text-align: center;
+	position: relative;
+}
+
+.use_steps2_list .step_item p {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 27px;
+}
+
+/* comparison */
+
+.comparison_section {
+	padding: 30px 0 0;
+}
+
+.comparison_section h2.title {
+	padding: 0 20px;
+}
+
+.comparison_section .titles_block h4 {
+	float: left;
+	margin: 0 4px 0 0;
+	padding: 20px 0;
+	width: 238px;
+	background: #333;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.comparison_section .titles_block h4:last-child {
+	margin: 0;
+	background: #149cc7;
+}
+
+.comparison_section .images_block {
+	margin: 0 0 4px;
+}
+
+.comparison_section .images_block img {
+	display: block;
+	float: left;
+	margin: 0 4px 0 0;
+	width: 238px;
+}
+
+.comparison_section .images_block img:last-child {
+	margin: 0;
+}
+
+.comparison_section .row {
+	display: table;
+	margin: 0 0 4px;
+	width: 100%;
+}
+
+.comparison_section .row:last-child {
+	margin: 0;
+}
+
+.comparison_section .row .column {
+	display: table-cell;
+	vertical-align: top;
+	padding: 10px 20px;
+	width: 50%;
+	border-right: 2px solid #fff;
+	background: #f5f5f5;
+}
+
+.comparison_section .row .column:last-child {
+	border-right: none;
+	border-left: 2px solid #fff;
+}
+
+.comparison_section .row:last-child .column:first-child {
+	padding-bottom: 16px;
+	-webkit-box-shadow: 0 -6px 0 0 #333 inset;
+	-moz-box-shadow: 0 -6px 0 0 #333 inset;
+	box-shadow: 0 -6px 0 0 #333 inset;
+}
+
+.comparison_section .row:last-child .column:last-child {
+	padding-bottom: 16px;
+	-webkit-box-shadow: 0 -6px 0 0 #149cc7 inset;
+	-moz-box-shadow: 0 -6px 0 0 #149cc7 inset;
+	box-shadow: 0 -6px 0 0 #149cc7 inset;
+}
+
+/* opinion 1 */
+
+.opinion1_section {
+	padding: 30px 20px 40px;
+	background: #f5f5f5;
+}
+
+.opinion1_section h2.title {
+	margin: 0 0 50px;
+}
+
+.opinion1_section .opinion_block {
+	padding: 60px 20px 20px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #fff url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html") center top no-repeat;
+	-webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 9px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 9px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	position: relative;
+}
+
+.opinion1_section .opinion_block:before {
+	display: block;
+	content: '';
+	width: 60px;
+	height: 60px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #149cc7 url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html") center no-repeat;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	margin-left: -30px;
+}
+
+.opinion1_section .photo {
+	display: block;
+	margin: 0 auto 15px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.opinion1_section .author_info {
+	margin: 0 0 15px;
+	padding: 0 0 20px;
+	background: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html") center bottom no-repeat;
+}
+
+.opinion1_section .author_info .name {
+	font-weight: 700;
+}
+
+.opinion1_section .author_info .text {
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.opinion1_section .text_block p {
+	margin: 0 0 15px;
+}
+
+.opinion1_section .text_block p:last-child {
+	margin: 0;
+}
+
+/* opinion 2 */
+
+.opinion2_section {
+	padding: 0;
+	text-align: center;
+}
+
+.opinion2_section h2.title {
+	padding: 12px 20px;
+	background: #149cc7;
+	color: #fff;
+}
+
+.opinion2_section .image_block {
+	margin: 0 auto 15px;
+	width: 170px;
+	position: relative;
+}
+
+.opinion2_section .image_block:before {
+	display: block;
+	content: '';
+	width: 30px;
+	height: 21px;
+	background: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html") center no-repeat;
+	position: absolute;
+	top: 20px;
+	right: 5px;
+}
+
+.opinion2_section .photo {
+	display: block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.opinion2_section .author_info {
+	margin: 0 0 30px;
+	padding: 0 20px 20px;
+	background: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html") center bottom no-repeat;
+}
+
+.opinion2_section .author_info .name {
+	font-weight: 700;
+}
+
+.opinion2_section .author_info .text {
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.opinion2_section .text_block {
+	padding: 25px 20px;
+	background: #149cc7;
+	color: #fff;
+	position: relative;
+}
+
+.opinion2_section .text_block:before {
+	display: block;
+	content: '';
+	border-top: 14px solid #fff;
+	border-left: 12px solid rgba(255,255,255,0);
+	border-right: 12px solid rgba(255,255,255,0);
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -12px;
+}
+
+.opinion2_section .text_block p {
+	margin: 0 0 15px;
+}
+
+.opinion2_section .text_block p:last-child {
+	margin: 0;
+}
+
+/* reviews stats */
+
+.reviews_stats_block {
+	margin: 0 0 40px;
+	text-align: center;
+}
+
+.reviews_stats_block .line {
+	margin: 5px auto 0;
+	width: 330px;
+	height: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #e6e6e6;
+	overflow: hidden;
+}
+
+.reviews_stats_block .line:before {
+	display: block;
+	content: '';
+	width: 98%;
+	height: 10px;
+	-webkit-border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+	border-radius: 0 5px 5px 0;
+	background: #3eb23e;
+}
+
+/* reviews 1 */
+
+.reviews1_section {
+	padding: 30px 30px 40px;
+}
+
+.reviews_list1 .author_block {
+	margin: 0 0 30px;
+}
+
+.reviews_list1 .author_block .avatar {
+	display: block;
+	float: left;
+	width: 80px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.reviews_list1 .author_block .author_info_block {
+	float: left;
+	margin: 15px 0 0 20px;
+	width: 320px;
+}
+
+.reviews_list1 .author_block .author_info {
+	font-weight: 700;
+}
+
+.reviews_list1 .author_block .text {
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.reviews_list1 .author_block .text:before {
+	display: inline-block;
+	vertical-align: middle;
+	margin: -5px 8px 0 0;
+	content: '';
+	width: 17px;
+	height: 16px;
+	background: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html") center no-repeat;
+}
+
+.reviews_list1 .text_block {
+	padding: 20px 40px 67px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #f5f5f5;
+	-webkit-box-shadow: 0 -3px 0 #d9d9d9 inset;
+	-moz-box-shadow: 0 -3px 0 #d9d9d9 inset;
+	box-shadow: 0 -3px 0 #d9d9d9 inset;
+	text-align: center;
+	position: relative;
+}
+
+.reviews_list1 .text_block:before {
+	display: block;
+	content: '';
+	border-bottom: 14px solid #f5f5f5;
+	border-left: 10px solid rgba(255,255,255,0);
+	border-right: 10px solid rgba(255,255,255,0);
+	position: absolute;
+	top: -14px;
+	left: 30px;
+}
+
+.reviews_list1 .text_block:after {
+	display: block;
+	content: '';
+	width: 30px;
+	height: 21px;
+	background: url("ylp67hn7.png") center no-repeat;
+	position: absolute;
+	top: -10px;
+	right: 40px;
+}
+
+.reviews_list1 .text_block p {
+	margin: 0 0 15px;
+}
+
+.reviews_list1 .text_block p:last-child {
+	margin: 0;
+}
+
+.reviews_list1 .text_block .photo {
+	display: block;
+	margin: 24px auto 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.reviews_list1 .owl-prev, 
+.reviews_list1 .owl-next {
+	width: 40px;
+	height: 40px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #149cc7 url("pp71wg13.png") no-repeat;
+	position: absolute;
+	top: 240px;
+}
+
+.reviews_list1 .owl-prev {
+	background-position: left center;
+	left: -20px;
+}
+
+.reviews_list1 .owl-next {
+	background-position: right center;
+	right: -20px;
+}
+
+.reviews_list1 .owl-dots {
+	width: 100%;
+	font-size: 0;
+	line-height: 0;
+	letter-spacing: -1px;
+	text-align: center;
+	position: absolute;
+	bottom: 33px;
+	left: 0;
+}
+
+.reviews_list1 .owl-dot {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 4px;
+	width: 10px;
+	height: 10px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #333;
+}
+
+.reviews_list1 .owl-dot.active {
+	width: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #149cc7;
+}
+
+/* reviews 2*/
+
+.reviews2_section {
+	padding: 30px 20px 40px;
+}
+
+.reviews2_section .reviews_list1 .author_block .author_info_block {
+	width: 280px;
+}
+
+.reviews2_section .reviews_list1 .text_block {
+	padding: 20px 30px 73px;
+}
+
+.reviews2_section .reviews_list1 .text_block:after {
+	right: 30px;
+}
+
+.reviews2_section .reviews_list1 .owl-prev {
+	display: none;
+}
+
+.reviews2_section .reviews_list1 .owl-next {
+	top: 20px;
+	right: 0;
+}
+
+/* reviews 3 */
+
+.reviews3_section {
+	padding: 30px 20px 40px;
+	background: #149cc7;
+}
+
+.reviews3_section h2 {
+	color: #fff;
+}
+
+.reviews3_section .reviews_stats_block {
+	color: #fff;
+}
+
+.reviews3_section .reviews_stats_block .line {
+	background: #fff;
+}
+
+.reviews3_section .reviews_stats_block .line:before {
+	background: #ffd800;
+}
+
+.reviews_list3 .owl-stage-outer {
+	padding: 30px 0 0;
+}
+
+.reviews_list3 .review_item {
+	padding: 30px 40px 67px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #fff;
+	-webkit-box-shadow: 0 -3px 0 #1185a9 inset;
+	-moz-box-shadow: 0 -3px 0 #1185a9 inset;
+	box-shadow: 0 -3px 0 #1185a9 inset;
+	position: relative;
+}
+
+.reviews_list3 .review_item:before {
+	display: block;
+	content: '';
+	width: 60px;
+	height: 60px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #fff url("ylp67hn7.png") center no-repeat;
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	margin-left: -30px;
+}
+
+.reviews_list3 .author_block {
+	margin: 0 0 15px;
+	padding: 0 0 20px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+	z-index: 10;
+}
+
+.reviews_list3 .author_block .avatar {
+	display: block;
+	float: left;
+	width: 60px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.reviews_list3 .author_block .author_info {
+	float: left;
+	margin: 8px 0 0 20px;
+	width: 280px;
+	line-height: 22px;
+}
+
+.reviews_list3 .author_block .name {
+	font-weight: 700;
+}
+
+.reviews_list3 .text_block {
+	text-align: center;
+}
+
+.reviews_list3 .text_block p {
+	margin: 0 0 15px;
+}
+
+.reviews_list3 .text_block p:last-child {
+	margin: 0;
+}
+
+.reviews_list3 .owl-dots {
+	width: 100%;
+	font-size: 0;
+	line-height: 0;
+	letter-spacing: -1px;
+	text-align: center;
+	position: absolute;
+	bottom: 33px;
+	left: 0;
+}
+
+.reviews_list3 .owl-dot {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 4px;
+	width: 10px;
+	height: 10px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #333;
+}
+
+.reviews_list3 .owl-dot.active {
+	width: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #149cc7;
+}
+
+.reviews_list3 .owl-prev, 
+.reviews_list3 .owl-next {
+	width: 40px;
+	height: 40px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #149cc7 url("pp71wg13.png") no-repeat;
+	position: absolute;
+	top: 50%;
+	margin-top: -7px;
+}
+
+.reviews_list3 .owl-prev {
+	background-position: left center;
+	left: -20px;
+}
+
+.reviews_list3 .owl-next {
+	background-position: right center;
+	right: -20px;
+}
+
+/* reviews 4 */
+
+.reviews4_section {
+	padding: 30px 20px 40px;
+	background: #149cc7;
+}
+
+.reviews4_section h2 {
+	color: #fff;
+}
+
+.reviews4_section .reviews_stats_block {
+	color: #fff;
+}
+
+.reviews4_section .reviews_stats_block .line {
+	background: #fff;
+}
+
+.reviews4_section .reviews_stats_block .line:before {
+	background: #ffd800;
+}
+
+.reviews_list4 .review_item {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #fff;
+	-webkit-box-shadow: 0 -3px 0 #1185a9 inset;
+	-moz-box-shadow: 0 -3px 0 #1185a9 inset;
+	box-shadow: 0 -3px 0 #1185a9 inset;
+	text-align: center;
+	overflow: hidden;
+}
+
+.reviews_list4 .text_block {
+	padding: 35px 30px 67px;
+	position: relative;
+}
+
+.reviews_list4 .text_block:before{
+	display: block;
+	content: '';
+	width: 60px;
+	height: 60px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #fff url("ylp67hn7.png") center no-repeat;
+	position: absolute;
+	top: 0px;
+	right: 30px;
+	margin-left: -30px;
+}
+
+.reviews_list4 .text_block .author_info {
+	margin: 0 0 10px;
+	font-weight: 700;
+}
+
+.reviews_list4 .owl-dots {
+	width: 100%;
+	font-size: 0;
+	line-height: 0;
+	letter-spacing: -1px;
+	text-align: center;
+	position: absolute;
+	bottom: 33px;
+	left: 0;
+}
+
+.reviews_list4 .owl-dot {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 4px;
+	width: 10px;
+	height: 10px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #333;
+}
+
+.reviews_list4 .owl-dot.active {
+	width: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #ffd800;
+}
+
+.reviews_list4 .owl-prev, 
+.reviews_list4 .owl-next {
+	width: 40px;
+	height: 40px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #ffd800 url("pp71wg13.png") no-repeat;
+	position: absolute;
+	top: 100px;
+}
+
+.reviews_list4 .owl-prev {
+	background-position: left center;
+	left: -20px;
+}
+
+.reviews_list4 .owl-next {
+	background-position: right center;
+	right: -20px;
+}
+
+/* order steps 1 */
+
+.order_steps_section {
+	padding: 30px 20px 30px;
+}
+
+.order_steps_list1 .step_item {
+	float: left;
+	margin: 0 10px 12px 0;
+	padding: 23px 20px 0 30px;
+	width: 215px;
+	height: 140px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #f5f5f5;
+	-webkit-box-shadow: 0 2px 0 #d9d9d9;
+	-moz-box-shadow: 0 2px 0 #d9d9d9;
+	box-shadow: 0 2px 0 #d9d9d9;
+	position: relative;
+}
+
+.dark_theme .order_steps_list1 .step_item {
+	background: #fff;
+	-webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+	color: #333;
+}
+
+.order_steps_list1 .step_item:nth-child(even) {
+	margin: 0 0 11px;
+}
+
+.order_steps_list1 .step_item:before {
+	display: block;
+	content: '';
+	width: 32px;
+	height: 32px;
+	background: center no-repeat;
+	position: absolute;
+	top: 19px;
+	right: 19px;
+}
+
+.order_steps_list1 .step_item:nth-child(1):before {
+	background-image: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html");
+}
+
+.order_steps_list1 .step_item:nth-child(2):before {
+	background-image: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html");
+}
+
+.order_steps_list1 .step_item:nth-child(3):before {
+	background-image: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html");
+}
+
+.order_steps_list1 .step_item:nth-child(4):before {
+	background-image: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html");
+}
+
+.order_steps_list1 .step_item h4 {
+	margin: 0 0 7px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.order_steps_list1 .step_item h4:after {
+	display: block;
+	content: '';
+	margin: 12px 0 0;
+	width: 30px;
+	height: 2px;
+	background: #e6e6e6;
+}
+
+/* order steps 2 */
+
+.order_steps_list2 .step_item {
+	float: left;
+	padding: 50px 20px 0 20px;
+	width: 240px;
+	height: 240px;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+
+.order_steps_list2 .step_item:nth-child(1) {
+	background: #149cc7;
+}
+
+.order_steps_list2 .step_item:nth-child(2) {
+	background: #1394bd;
+}
+
+.order_steps_list2 .step_item:nth-child(3) {
+	background: #128cb3;
+}
+
+.order_steps_list2 .step_item:nth-child(4) {
+	background: #107d9f;
+}
+
+.order_steps_list2 .step_item .number {
+	width: 40px;
+	height: 40px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: rgba(255,255,255,0.1);
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 40px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.order_steps_list2 .step_item:before {
+	display: block;
+	content: '';
+	margin: 0 auto 10px;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: center no-repeat;
+}
+
+.order_steps_list2 .step_item:nth-child(1):before {
+	background-image: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html");
+}
+
+.order_steps_list2 .step_item:nth-child(2):before {
+	background-image: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html");
+}
+
+.order_steps_list2 .step_item:nth-child(3):before {
+	background-image: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html");
+}
+
+.order_steps_list2 .step_item:nth-child(4):before {
+	background-image: url("http://turkadlakofe.salestop.com.ua/site/electroturkaaplus/cgi-sys/index.html");
+}
+
+.order_steps_list2 .step_item h4 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* order info 1 */
+
+.order_info1_section {
+	padding: 30px 0;
+}
+
+.order_info_list1 .info_item {
+	margin: 0 0 20px;
+	padding: 0 20px 24px;
+	background: url("76k7wdl9.png") center bottom no-repeat;
+}
+
+.order_info_list1 .info_item:last-child {
+	margin: 0;
+	padding: 0 20px;
+	background: none;
+}
+
+.order_info_list1 .info_item h4 {
+	margin: 0 0 5px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.dark_theme .order_info_list1 .info_item h4 {
+	color: #ffd800;
+}
+
+.order_info_list1 .info_item .icon_block {
+	float: left;
+	margin: 0 20px 0 0;
+	width: 80px;
+	height: 80px;
+	-webkit-border-radius: 20px 4px;
+	-moz-border-radius: 20px 4px;
+	border-radius: 20px 4px;
+	font-size: 0;
+	line-height: 80px;
+	letter-spacing: 1px;
+	text-align: center;
+	background: #399761;
+}
+
+.dark_theme .order_info_list1 .info_item .icon_block {
+	border: 1px solid rgba(255,255,255,0.1);
+	background: #333;
+	line-height: 78px;
+}
+
+.order_info_list1 .info_item .icon_block img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 20px;
+}
+
+.order_info_list1 .info_item .text_block {
+	float: left;
+	width: 340px;
+}
+
+/* order info 2 */
+
+.order_info2_section {
+	padding: 30px 0 0;
+}
+
+.order_info2_section h2.title {
+	padding: 0 20px;
+}
+
+.order_info_list2 .info_item {
+	display: table;
+	width: 100%;
+	height: 204px;
+	border-top: 4px solid #d9d9d9;
+	position: relative;
+}
+
+.order_info_list2 .info_item img {
+	display: block;
+	width: 220px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.order_info_list2 .info_item:nth-child(even) img {
+	right: auto;
+	left: 0;
+}
+
+.order_info_list2 .info_item .text_block {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 240px 0 20px;
+	text-align: center;
+}
+
+.order_info_list2 .info_item:nth-child(even) .text_block {
+	padding: 0 20px 0 240px;
+}
+
+.order_info_list2 .info_item h4 {
+	margin: 0 0 5px;
+	font-weight: 700;
+	color: #149cc7;
+}
+
+/* footer */
+
+.footer_section {
+	padding: 25px 0;
+	background: #f2f2f2;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center;
+}
+
+.footer_section img {
+	display: block;
+	margin: 0 auto 10px auto;
+}
+
+.footer_section a {
+	color: #111;
+}
+
+.video_sect{
+	padding-bottom: 0;
+}
+.video_sect .title{
+	font-size: 26px;
+	line-height: 1.1em;
+	color: #fff;
+}
+.sect_benef{
+	padding-bottom: 0;
+}
+.char_text{
+	position: absolute;
+	background: #8dc63f url("jwvwi2z-.jpg.png") 15px 14px no-repeat;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	width: 170px;
+	padding: 8px 0 8px 45px;
+	border-radius: 4px;
+	left: 145px;
+	top: -40px;
+}
+.char_text:after{
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 8px 9px 0 9px;
+	border-color: #8ec63f transparent transparent transparent;
+	position: absolute;
+	bottom: -8px;
+	right: 10px;
+}
+.char_img{
+	margin-top: 65px;
+	position: relative;
+	margin-bottom: 20px;
+}
+.char_img>img{
+	display: block;
+	margin: 0px auto;
+}
+.char_sect .button{
+	margin-top: 30px;
+}
+.slider_sect{
+	padding: 0;
+}

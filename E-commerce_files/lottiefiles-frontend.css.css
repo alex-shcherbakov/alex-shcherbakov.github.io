@@ -1,0 +1,13 @@
+/**
+ * Copyright 2022 Design Barn Inc.
+ */
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.mr-0 {
+  margin-right: 0px !important;
+}
+
